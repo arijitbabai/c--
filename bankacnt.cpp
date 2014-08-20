@@ -3,9 +3,7 @@
 
 using namespace std;
 
-
-
-	
+//Declesring the class
 	
 class acnt
 {
@@ -19,6 +17,7 @@ class acnt
 			bal = 00.00;
 		}
 
+		//Taking the usrname and password of the new user  
 		void secure()
 		{
 			cout <<"<< Username :" << endl;
@@ -27,7 +26,7 @@ class acnt
 			cin >> psswd;
 
 		}	
-		
+		//Taking the personal details of the user
 		void getdata()
 		{
 			
@@ -43,6 +42,7 @@ class acnt
 			cout << "Your account is created" << endl;
 		}
 
+		//For depositing money
 		void dposit()
 		{
 			float d;
@@ -53,6 +53,7 @@ class acnt
 			//cout << "Now your balance is : "<< bal;
 		}
 		
+		//For withdrawling money
 		void withdrawl()
 		{
 			float w;
@@ -67,6 +68,8 @@ class acnt
 			}
 		}
 
+		//Checking the username and password of the user
+
 		int check(acnt s)
 		{
 			if(s.u == usrnm && s.p == psswd)
@@ -74,6 +77,7 @@ class acnt
 			else 
 				return 0;
 		}
+		//input usrname and password for checking
 
 		void c()
 		{
@@ -82,7 +86,8 @@ class acnt
 			cout <<"<< Password :" << endl;
 			cin >> p;
 		}
-		
+		//print the details of the user account
+
 		void details()
 		{
 			cout <<"Name = " << name << endl;
@@ -92,15 +97,15 @@ class acnt
 		}
 };
 
-
+//main function
 int main(void)
 {
 	acnt a[10],s1;
 	int i = 12;
 	int j = 0,m;
-	cout << "Enter the details of the banker "<<endl;
-	a[j].secure();
-	a[j].getdata();	
+	//cout << "Enter the details of the banker "<<endl;
+	//a[j].secure();
+	//a[j].getdata();	
 	while(i != 0)
 	{
 		cout << "<< 1 to deposite " << endl
@@ -164,9 +169,10 @@ int main(void)
 		
 		if(i == 4)
 		{
-			j = j+1;
+			
 			a[j].secure();
 			a[j].getdata();
+			j = j+1;
 		}
 		
 	}

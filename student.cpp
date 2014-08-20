@@ -29,7 +29,7 @@ class student
 		{
 			cout << name << "\t\t" 
 				<< roll << "\t\t"
-				<< m1 << "\t\t"
+				<<m1 << "\t\t"
 				<< m2 << "\t\t"
 				<< m3 << "\t\t"
 				<< total << "\t\t"
